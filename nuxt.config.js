@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'NuxtBnb',
+    titleTemplate: "NuxtBnb: %s",
     htmlAttrs: {
       lang: 'en'
     },
@@ -13,7 +13,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    bodyAttrs:{
+      class:[]
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
