@@ -1,5 +1,5 @@
  <template>
-  <div>
+  <>
     <div style="display: flex">
       <img v-for="image in home.images" :key="image" :src="image" style="width: 200px" />
     </div>
@@ -9,8 +9,8 @@
      <img src="/images/star.svg" width="20" height="20"  />{{ home.reviewValue }} <br />
      {{ home.guests }} guests     {{ home.bedrooms }} rooms     {{ home.beds }} beds     {{ home.bathrooms }} bath<br/>
  
-  </div>
-</template
+  </>
+</template>
  <<script>
 import homes from "~/data/homes";
  export default {
