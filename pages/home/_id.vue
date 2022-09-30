@@ -10,7 +10,7 @@
      {{ home.guests }} guests     {{ home.bedrooms }} rooms     {{ home.beds }} beds     {{ home.bathrooms }} bath<br/>
  
   </div>
-</template>
+</template
  <<script>
 import homes from "~/data/homes";
  export default {
