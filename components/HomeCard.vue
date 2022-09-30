@@ -6,7 +6,7 @@
    {{ home.guests }} guests <br/>
    {{ home.pricePerNight }} /night <br/>
   
-  </div
+  </div>
 </template>
 <script>
 
