@@ -7,7 +7,7 @@
     >
       <HomeCard :home="home" />
     </div>
-  </div>
+  </div
 </template>
 
 <script>
