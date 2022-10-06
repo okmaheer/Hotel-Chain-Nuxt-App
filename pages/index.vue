@@ -18,7 +18,7 @@ export default {
   return{
     title: 'Homepage',
     meta:[
-      
+      {
         name:'description',
         content:'This is a homepage!',
         hid:'description'
