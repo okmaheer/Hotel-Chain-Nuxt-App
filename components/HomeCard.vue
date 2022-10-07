@@ -7,7 +7,7 @@
    {{ home.pricePerNight }} /night <br/>
   
   </div>
-</template>
+</template
 <script>
 
 export default { 
