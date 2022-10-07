@@ -9,7 +9,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import homes from "~/data/homes";
 
