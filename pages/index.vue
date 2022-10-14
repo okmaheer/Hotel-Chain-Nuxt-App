@@ -14,7 +14,7 @@
 import homes from "~/data/homes";
 
 export default {
-  head()
+  head(){
   return{
     title: 'Homepage',
     meta:[
