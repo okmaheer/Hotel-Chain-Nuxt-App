@@ -13,7 +13,7 @@
 <script>
 import homes from "~/data/homes";
 
-export default {
+export default 
   head(){
   return{
     title: 'Homepage',
