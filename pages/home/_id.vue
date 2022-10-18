@@ -24,6 +24,9 @@ import homes from "~/data/homes";
             home:{},
         }
     },
+    mounted(){
+
+    },
   created(){
    this.home = homes.find((home) => home.objectID == this.$route.params.id)
 
