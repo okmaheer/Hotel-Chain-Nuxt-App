@@ -5,7 +5,8 @@
       :key="home.objectID"
       style="float: left; margin: 10px"
     >
-      <HomeCard :home="home" />
+    <nuxt-link :to="`/home/${home.objectID}`" no-prefetch> <HomeCard :home="home" /></nuxt-link>
+     
     </div>
   </div>
 </template>
