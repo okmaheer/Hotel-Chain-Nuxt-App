@@ -24,7 +24,11 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [ '~plugins/maps.client.js'],
+  plugins:[ 
+    '~/plugins/maps.client', 
+    '~/plugins/dataApi', 
+
+],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -35,11 +39,5 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
 }
