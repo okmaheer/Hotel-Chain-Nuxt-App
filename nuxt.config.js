@@ -37,7 +37,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-  ],
+  ]
 
 
 }
