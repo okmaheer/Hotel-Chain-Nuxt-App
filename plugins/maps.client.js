@@ -3,7 +3,7 @@ export default function(context, inject){
     let waiting = []
     
     addScript()
-    inject('maps', {
+    inject('maps', 
         showMap,
         makeAutoComplete,
     })
