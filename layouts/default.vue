@@ -3,6 +3,6 @@
      <header>
         <nuxt-link to="/"> HOME </nuxt-link>
      </header>
-        <nuxt/
+        <nuxt/>
     </div>
 </template>
