@@ -9,7 +9,7 @@
      
     </div>
   </div>
-</template
+</template>
 
 <script>
 import homes from "~/data/homes";
