@@ -37,7 +37,7 @@
     {
        return error({statusCode:reviewResponse.status, messgae: reviewResponse.statusText})
     }
-       return 
+       return {
         home: homeResponse.json,
         reviews: reviewResponse.json.hits,
       }
