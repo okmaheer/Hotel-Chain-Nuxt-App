@@ -37,8 +37,7 @@
     {
        return error({statusCode:reviewResponse.status, messgae: reviewResponse.statusText})
     }
-    console.log(reviewResponse.json.hits);
-       return {
+       return 
         home: homeResponse.json,
         reviews: reviewResponse.json.hits,
       }
