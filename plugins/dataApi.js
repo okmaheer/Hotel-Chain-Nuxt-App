@@ -18,7 +18,6 @@ export default function (content,inject){
     }   
   }
         async function getReviewsByHomeId(homeId){
-          
         try {
             return unWrap(await fetch(`https://${appId}-dsn.algolia.net/1/indexes/reviews/query`, {
                 headers,
