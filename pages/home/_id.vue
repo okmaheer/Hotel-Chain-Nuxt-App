@@ -13,9 +13,15 @@
     <div v-for="review in reviews" :key="review.objectID">
       <img :src="review.reviewer.image" width="50" height="50"  /><br/>
       {{ review.reviewer.name }}<br/>
-      {{ review.date }}<br/>
-      {{ review.comment }}<br/>
+      {{ formatDate(review.date) }}<br/>
+    <short-text :text="review.comment" :target="150"/><br/>
     </div>
+    <img :src="user.image" width="50" height="50"  /><br/>
+      {{ user.name }}<br/>
+      {{ formatDate(user.joined) }}<br/>
+      {{ user.reviewCount }}<br/>
+      {{ user.description }}<br/>
+  
   </div>
 </template>
  <<script>
@@ -37,10 +43,23 @@
     {
        return error({statusCode:reviewResponse.status, messgae: reviewResponse.statusText})
     }
+    const userResponse = await $dataApi.getUserByHomeId(params.id) 
+    if(!userResponse.ok)
+    {
+       return error({statusCode:userResponse.status, messgae: userResponse.statusText})
+    }
+    console.log(userResponse)
        return {
         home: homeResponse.json,
         reviews: reviewResponse.json.hits,
+        user: userResponse.json.hits[0],
       }
-  } 
+  }, 
+  methods:{
+     formatDate(dateStar){
+     const date = new Date(dateStar)
+     return date.toLocaleDateString(undefined,{ month:'long', year: 'numeric'})
+     }
+}
  }
  </script>    
