@@ -48,7 +48,6 @@
     {
        return error({statusCode:userResponse.status, messgae: userResponse.statusText})
     }
-    console.log(userResponse)
        return {
         home: homeResponse.json,
         reviews: reviewResponse.json.hits,
