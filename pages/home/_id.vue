@@ -1,27 +1,37 @@
  <template>
   <div>
     <div style="display: flex">
-      <img v-for="image in home.images" :key="image" :src="image" style="width: 200px" />
+      <img
+        v-for="image in home.images"
+        :key="image"
+        :src="image"
+        style="width: 200px"
+      />
     </div>
-    {{ home.title }}<br/>
-    {{ home.pricePerNight }} /night <br/>
-     <img src="/images/marker.svg" width="20" height="20"  />{{ home.location.address }} {{ home.location.city }} {{ home.location.state }} {{ home.location.country }}
-     <img src="/images/star.svg" width="20" height="20"  />{{ home.reviewValue }} <br />
-     {{ home.guests }} guests     {{ home.bedrooms }} rooms     {{ home.beds }} beds     {{ home.bathrooms }} bath<br/>
+    {{ home.title }}<br />
+    {{ home.pricePerNight }} /night <br />
+    <img src="/images/marker.svg" width="20" height="20" />{{
+      home.location.address
+    }}
+    {{ home.location.city }} {{ home.location.state }}
+    {{ home.location.country }}
+    <img src="/images/star.svg" width="20" height="20" />{{ home.reviewValue }}
+    <br />
+    {{ home.guests }} guests {{ home.bedrooms }} rooms {{ home.beds }} beds
+    {{ home.bathrooms }} bath<br />
     {{ home.description }}
 
     <div v-for="review in reviews" :key="review.objectID">
-      <img :src="review.reviewer.image" width="50" height="50"  /><br/>
-      {{ review.reviewer.name }}<br/>
-      {{ formatDate(review.date) }}<br/>
-    <short-text :text="review.comment" :target="150"/><br/>
+      <img :src="review.reviewer.image" width="50" height="50" /><br />
+      {{ review.reviewer.name }}<br />
+      {{ formatDate(review.date) }}<br />
+      <short-text :text="review.comment" :target="150" /><br />
     </div>
-    <img :src="user.image" width="50" height="50"  /><br/>
-      {{ user.name }}<br/>
-      {{ formatDate(user.joined) }}<br/>
-      {{ user.reviewCount }}<br/>
-      {{ user.description }}<br/>
-  
+    <img :src="user.image" width="50" height="50" /><br />
+    {{ user.name }}<br />
+    {{ formatDate(user.joined) }}<br />
+    {{ user.reviewCount }}<br />
+    {{ user.description }}<br />
   </div>
 </template>
  <<script>
@@ -32,26 +42,19 @@
         }
     },
     async asyncData({params,$dataApi, error}){
-    const homeResponse = await $dataApi.getHome(params.id) 
-    if(!homeResponse.ok)
-    {
-       return error({statusCode:homeResponse.status, messgae: homeResponse.statusText})
-    }
+      const responses = await Promise.all([
+      await $dataApi.getHome(params.id),
+      await $dataApi.getReviewsByHomeId(params.id),
+      await $dataApi.getUserByHomeId(params.id) 
+      ])
 
-    const reviewResponse = await $dataApi.getReviewsByHomeId(params.id) 
-    if(!reviewResponse.ok)
-    {
-       return error({statusCode:reviewResponse.status, messgae: reviewResponse.statusText})
-    }
-    const userResponse = await $dataApi.getUserByHomeId(params.id) 
-    if(!userResponse.ok)
-    {
-       return error({statusCode:userResponse.status, messgae: userResponse.statusText})
-    }
+      const badResponse = responses.find((response)=> !response.ok)
+      if(badResponse) return ({statusCode:badResponse.status, messgae: badResponse.statusText})
+   
        return {
-        home: homeResponse.json,
-        reviews: reviewResponse.json.hits,
-        user: userResponse.json.hits[0],
+        home: responses[0].json,
+        reviews: responses[1].json.hits,
+        user: responses[2].json.hits[0],
       }
   }, 
   methods:{
