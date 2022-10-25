@@ -23,7 +23,7 @@
 
     <div v-for="review in reviews" :key="review.objectID">
       <img :src="review.reviewer.image" width="50" height="50" /><br />
-      {{ review.reviewer.name }}<br /
+      {{ review.reviewer.name }}<br />
       {{ formatDate(review.date) }}<br />
       <short-text :text="review.comment" :target="150" /><br />
     </div>
