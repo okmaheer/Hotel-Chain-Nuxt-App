@@ -1,8 +1,16 @@
 <template>
     <div>
-     <header>
+     <header style="background-color:#eee;">
         <nuxt-link to="/"> HOME </nuxt-link>
+        <input type="text" ref="citySearch">
      </header>
         <nuxt/>
     </div>
 </template>
+<script>
+export default {
+  mounted() {
+    this.$maps.makeAutoComplete(this.$refs.citySearch);
+  },
+};
+</script>
