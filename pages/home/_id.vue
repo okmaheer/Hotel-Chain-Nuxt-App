@@ -41,7 +41,7 @@
         title:this.home.title,
         }
     },
-    async asyncData({params,$dataApi, error}){
+    async asyncData({params,$dataApi}){
       const responses = await Promise.all([
       await $dataApi.getHome(params.id),
       await $dataApi.getReviewsByHomeId(params.id),
