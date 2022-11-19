@@ -20,6 +20,9 @@
     {{ home.guests }} guests {{ home.bedrooms }} rooms {{ home.beds }} beds
     {{ home.bathrooms }} bath<br />
     {{ home.description }}
+    <div style="height:800px;width:800px;" ref="map">
+     
+    </div>
 
     <div v-for="review in reviews" :key="review.objectID">
       <img :src="review.reviewer.image" width="50" height="50" /><br />
@@ -34,12 +37,16 @@
     {{ user.description }}<br />
   </div>
 </template>
- <<script>
+ <script>
  export default {
     head(){
         return {
-        title:this.home.title,
+        title:this.home.title,     
         }
+    },
+    mounted(){
+      console.log(this.$maps);
+      this.$maps.showMap(this.$refs.map,this.home._geoloc.lat,this.home._geoloc.lng)
     },
     async asyncData({params,$dataApi}){
       const responses = await Promise.all([
