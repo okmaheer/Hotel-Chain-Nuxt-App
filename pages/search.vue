@@ -1,11 +1,19 @@
 <template>
     <div>{{ lat }}/{{ lng }} / {{ label }}<br />
+        {{ homes }}
+        <div v-if="homes.lenght > 0">
         <HomeRow v-for="home in homes" :key="home.objectID" :home="home"/>
+        </div>
+        <div v-else> No Result Found</div>
     </div>
  
 </template>
 <script>
 export default {
+    head(){
+       return 
+       title: `Homes around ${this.label}`
+    },
     async beforeRouteUpdate(to,from,next){
         const data = await this.$dataApi.getHomesByLocation(to.query.lat,to.query.lng)
         this.homes = data.json.hits
