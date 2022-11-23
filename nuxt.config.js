@@ -29,11 +29,7 @@ export default {
     '~/plugins/dataApi',
 
   ],
-  modules:[[
-  '~/modules/test',{message:'my module1111'}
-],[
-  '~/modules/test2',{message:'my module2222'}
-]],
+  modules:['~/modules/test'],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
