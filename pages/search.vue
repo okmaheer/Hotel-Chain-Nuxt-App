@@ -3,7 +3,7 @@
         <div style="height:800px;width:800px;float:right;" ref="map"></div>
         <div v-if="Object.keys(homes).length > 0">
             <nuxt-link v-for="home in homes" :key="home.objectID" :to="`/home/${home.objectID}`">
-            <HomeRow :home="home" />
+                <HomeRow :home="home" />
             </nuxt-link>
         </div>
         <div v-else> No Result Found</div>
@@ -21,20 +21,23 @@ export default {
         this.updateMap()
     },
     methods: {
-        updateMap() {
-            this.$maps.showMap(this.$refs.map, this.lat, this.lng,this.getHomeMarkers())
+        highlightMarker(homeId, isHighlighted) {
+            document.getElementsByClassName(`home-${homeId}`)[0]?.classList?.toggle('marker-highlight', isHighlighted)
         },
-        getHomeMarkers(){
-      if(this.homes.length ==0) return null
+        updateMap() {
+            this.$maps.showMap(this.$refs.map, this.lat, this.lng, this.getHomeMarkers())
+        },
+        getHomeMarkers() {
+            if (this.homes.length == 0) return null
 
-      return this.homes.map((home) => {
-        return {
-          ...home._geoloc,
-          pricePerNight: home.pricePerNight,
-          id: home.objectID,
+            return this.homes.map((home) => {
+                return {
+                    ...home._geoloc,
+                    pricePerNight: home.pricePerNight,
+                    id: home.objectID,
+                }
+            })
         }
-      })
-    }
     },
     async beforeRouteUpdate(to, from, next) {
         const data = await this.$dataApi.getHomesByLocation(to.query.lat, to.query.lng)
@@ -58,15 +61,16 @@ export default {
 </script>
 <style>
 .marker {
-  background-color: white;
-  border: 1px solid lightgray;
-  font-weight: bold;
-  border-radius: 20px;
-  padding: 5px 8px;
+    background-color: white;
+    border: 1px solid lightgray;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 8px;
 }
+
 .marker-highlight {
-  color: white !important;
-  background-color: black;
-  border-color:black;
+    color: white !important;
+    background-color: black;
+    border-color: black;
 }
 </style>
