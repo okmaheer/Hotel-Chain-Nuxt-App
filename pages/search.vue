@@ -3,7 +3,7 @@
         <div style="height:800px;width:800px;float:right;" ref="map"></div>
         <div v-if="Object.keys(homes).length > 0">
             <nuxt-link v-for="home in homes" :key="home.objectID" :to="`/home/${home.objectID}`">
-                <HomeRow :home="home" />
+                <HomeRow :home="home" @mouseover.native="highlightMarker(home.objectID,true)" @mouseout.native="highlightMarker(home.objectID,false)"/>
             </nuxt-link>
         </div>
         <div v-else> No Result Found</div>
@@ -22,7 +22,7 @@ export default {
     },
     methods: {
         highlightMarker(homeId, isHighlighted) {
-            document.getElementsByClassName(`home-${homeId}`)[0]?.classList?.toggle('marker-highlight', isHighlighted)
+         document.getElementsByClassName(`home-${homeId}`)[0]?.classList?.toggle('marker-highlight', isHighlighted)
         },
         updateMap() {
             this.$maps.showMap(this.$refs.map, this.lat, this.lng, this.getHomeMarkers())
