@@ -20,8 +20,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -29,7 +28,7 @@ export default {
     '~/plugins/dataApi',
 
   ],
-  modules:['~/modules/test'],
+  modules: ['~/modules/test'],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -38,6 +37,20 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+  css: [
+    '~/assets/sass/app.scss'
+  ],
+  build: {
+    extractCSS: true,
+    loaders: {
+      limit: 0,
+    }
+  },
+  publicRuntimeConfig: {
 
+  },
+  privateRuntimeConfig: {
+
+  }
 
 }
