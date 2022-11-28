@@ -11,14 +11,12 @@
             <button>
                 <img src="/images/icons/search.svg" />
             </button>
-
          </div>
-        </header>
-
-
-        <header>
-            <nuxt-link to="/">Home</nuxt-link>
-            <input type="text" ref="citySearch" @changed="changed">
+         <div class="app-user-menu">
+         <img src="/images/icons/search.svg" />
+         <div class="name">Host</div>
+         <img src="/images/user.jpg"  class="avatar" />
+         </div>
         </header>
         <nuxt />
     </div>
@@ -26,6 +24,7 @@
 <script>
 export default {
     mounted() {
+       
         this.$maps.makeAutoComplete(this.$refs.citySearch)
     },
     methods: {
