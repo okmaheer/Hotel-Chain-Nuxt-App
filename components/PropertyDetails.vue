@@ -29,7 +29,7 @@
                     <input type="text" class="datepicker" placeholder="Check out" />
                 </div>
 
-                <button class="app-big-button" @click="checkout">Request to book!</button>
+                <button class="app-big-button">Request to book!</button>
             </div>
         </div>
     </div>
