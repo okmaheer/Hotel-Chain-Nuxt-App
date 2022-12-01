@@ -18,7 +18,7 @@
         <span>({{ home.reviewCount }})</span>
       </div>
       <div class="app-price">
-        ${{ home.pricePerNight }}<span>/ night</span>
+        Rs {{ home.pricePerNight }}<span>/ night</span>
       </div>
     </div>
   </div>
