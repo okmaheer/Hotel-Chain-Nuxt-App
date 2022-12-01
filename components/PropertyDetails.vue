@@ -22,7 +22,7 @@
             </div>
             <div>
                 <div class="app-price">
-                    ${{ home.pricePerNight }}<span> / night</span>
+                    Rs {{ home.pricePerNight }}<span> / night</span>
                 </div>
                 <div class="app-search">
                     <input type="text" class="datepicker" placeholder="Check in" />
