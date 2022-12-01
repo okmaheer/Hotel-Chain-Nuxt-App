@@ -1,206 +1,456 @@
-[  { 
-    "objectID":"a",
-    "type": "CABIN",
-    "title": "Warm and Cozy Cabin in the Woods",    
+[ 
+    
+    { 
+        "objectID":"a",
+        "type": "Guest House",
+        "title": "Royal Galaxy Guest House",    
+        "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
+        "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
+        "reviewCount": 21,
+        "reviewValue": 4.93,
+        "features":[
+            "Coffee Maker",
+            "Smoke Alarm",
+            "Stove",
+            "Wifi",
+            "Toiletries",
+            "Self Check-In",
+            "Free Parking",
+            "Washer",
+            "Dryer",
+            "Bear Traps",
+            "TV",
+            "Kitchen"        
+        ],
+        "pricePerNight": 17000,    
+        "location": {        
+            "address": "Hosue 11, Street 74, A, Sector SCHS E 11/3 E-11, Islamabad, Islamabad Capital Territory",        
+            "city": "Islamabad",
+            "state": "Federal",
+            "country": "Pakistan"
+        },    
+        "guests": 3,
+        "bedrooms": 4,
+        "beds": 3,
+        "bathrooms": 2,
+        "images": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/196377701.jpg?k=1e5b73193b67107901491aa03220958c848c5ac45e64767c1630ac2708f95df9&o=&hp=1",
+            "https://lh3.googleusercontent.com/p/AF1QipMVFwGolZGdNnsdjn5tYZfEkd1UQtUl72JORALn=w1080-h608-p-no-v0",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/115984682.jpg?k=7fba12ee80035a2b627f1c5ad25038f86064114ea6a5e9c2f2ebb1abf0a23d7d&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/196377621.jpg?k=c83b54e318e9841e875809da59dc08d973dea044d1e3e6009668c44ce449e305&o=&hp=1",
+            "https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/115873224.jpg?k=c7c6249bd89dc6dfc2945e49d7566a7ba9dbdb7d7f88c45c85d3ed43c01705b8&o="
+        ],
+        "host": {
+            "name": "Megan",
+            "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
+            "note": "Hi my name is Megan. My husband Doug and I live on an old dairy farm just outside of town. We have 5 children. Four of them are in college.\nThe fifth is in 8th grade. We are excited about getting a chance to travel.  I work for a Caterpillar Company called Solar Turbines here in Vail.\nI love to meditate, fence, and snow shoe.  Boy, this is a whole lot of filler text, my fingers are getting tired.  Anyway, I hope your stay with us is a pleasant one.  We strive to provide top notch service as a budget prices.",
+            "reviewCount": 2,
+            "reviewValue": 4.98,
+            "joined": "2020-10-31T01:26:49+0000"
+        },
+        "_geoloc": {
+            "lat": 33.70291165492066,
+            "lng": 72.97391161358142        
+          }
+    },{ 
+        "objectID":"b",
+        "type": "Hotel",
+        "title": "S Chalet Islamabad",    
+        "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
+        "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
+        "reviewCount": 56,
+        "reviewValue": 4.82,
+        "features":[
+            "Coffee Maker",
+            "Smoke Alarm",
+            "Stove",
+            "Toiletries",
+            "Self Check-In",
+            "Free Parking",
+            "Washer",
+            "Dryer",
+            "Kitchen"        
+        ],
+        "pricePerNight": 21900,    
+        "location": {        
+            "address": "14 Corner, Street # 60، 3, Main Ataturk Ave, F-6, Islamabad,",        
+            "city": "Islamabad",
+            "state": "Federal",
+            "country": "Pakistan"
+        },    
+        "guests": 4,
+        "bedrooms": 2,
+        "beds": 4,
+        "bathrooms": 1,
+        "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipM6EpDMZ2mFIEkXwLy4xdrDipR0okQgeAp5Qjxc=w1080-h608-p-no-v0",
+            "https://cf.bstatic.com/xdata/images/hotel/max1280x900/269357450.jpg?k=02578210c41ad95754dd27d0a661cb9e2197cb035f20e843ea636a750cf8dc90&o=&hp=1",
+            "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/46/52/5b/s-chalet-islamabad.jpg",
+            "https://new-hls.s3.amazonaws.com/hls/data/5358/website/general/bn/mobile_20190716_145552.jpeg",
+            "https://lbnhotels.com/upload/gallery/1204-1641484562-1950771791.jpg"
+        ],
+        "host": {
+            "name": "Megan",
+            "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
+            "note": "Hi my name is Megan. My husband Doug and I live on an old dairy farm just outside of town. We have 5 children. Four of them are in college.\nThe fifth is in 8th grade. We are excited about getting a chance to travel.  I work for a Caterpillar Company called Solar Turbines here in Vail.\nI love to meditate, fence, and snow shoe.  Boy, this is a whole lot of filler text, my fingers are getting tired.  Anyway, I hope your stay with us is a pleasant one.  We strive to provide top notch service as a budget prices.",
+            "reviewCount": 5,
+            "reviewValue": 4.67,
+            "joined": "2020-10-31T01:26:49+0000"
+        },
+        "_geoloc": {
+            "lat": 33.73575431433353,
+            "lng": -73.08402211784396
+          }
+    },
+    { 
+        "objectID":"c",
+        "type": "Hotel",
+        "title": "Hotel Almarkaz islamabad",    
+        "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
+        "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
+        "reviewCount": 186,
+        "reviewValue": 4.71,
+        "features":[
+            "Smoke Alarm",
+            "Stove",
+            "Wifi",
+            "Toiletries",
+            "Self Check-In",
+            "Free Parking",
+            "Washer",
+            "Dryer",
+            "TV",
+            "Kitchen"        
+        ],
+        "pricePerNight": 189,    
+        "location": {        
+            "address": "Sitara market, Plot 6e, G-7 Markaz G 7 Markaz sitara market, Islamabad, Islamabad",        
+            "city": "Islamabad",
+            "state": "Federal",
+            "country": "Pakistan"
+        },    
+        "guests": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "bathrooms": 1,
+        "images": [
+            "https://startuppakistan.com.pk/wp-content/uploads/2022/09/image-89.png",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/236611431.jpg?k=696bf0a89c4b1dadfd668dbc310f6ce035078004a844abc9b973e1efee14f6e8&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/299440261.jpg?k=b63887f30f17053ec572f1a67c2d670e1c9dd5905c99306f6fa5b95076eafe3c&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/276699817.jpg?k=a7ba37253dfa4ca002cd8c9b72784c141b422d15d13b12000ad712c4831458a9&o=&hp=1",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO7mvvjTY8KRvDgJwFEJpu27lETSBW0uFd_Q&usqp=CAU"
+        ],
+        "host": {
+            "name": "Megan",
+            "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
+            "note": "Hi my name is Megan. My husband Doug and I live on an old dairy farm just outside of town. We have 5 children. Four of them are in college.\nThe fifth is in 8th grade. We are excited about getting a chance to travel.  I work for a Caterpillar Company called Solar Turbines here in Vail.\nI love to meditate, fence, and snow shoe.  Boy, this is a whole lot of filler text, my fingers are getting tired.  Anyway, I hope your stay with us is a pleasant one.  We strive to provide top notch service as a budget prices.",
+            "reviewCount": 7,
+            "reviewValue": 4.11,
+            "joined": "2020-10-31T01:26:49+0000"
+        },
+        "_geoloc": {
+            "lat":  33.70556622846685,
+            "lng":  73.06772127490936
+          }
+    },
+    { 
+        "objectID":"d",
+        "type": "Hotel",
+        "title": "CRoyal Blue Inn Hotel",    
+        "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
+        "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
+        "reviewCount": 213,
+        "reviewValue": 4.13,
+        "features":[
+            "Coffee Maker",
+            "Smoke Alarm",
+            "Stove",
+            "Wifi",
+            "Toiletries",
+            "Self Check-In",
+            "Free Parking",
+            "Washer",
+            "Dryer",
+            "TV",
+            "Kitchen"        
+        ],
+        "pricePerNight": 17500,    
+        "location": {        
+            "address": "Block-110, Street 32, G-9/1 G 9/1 G-9, Islamabad, Islamabad Capital Territory",        
+            "city": "Islamabad",
+            "state": "Federal",
+            "country": "Pakistan"
+        },    
+        "guests": 5,
+        "bedrooms": 2,
+        "beds": 4,
+        "bathrooms": 2,
+        "images": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/402079386.jpg?k=c88017abefc90b0f52f7e677e73dfdb1a093784b6ab26b561b671327bc8177b4&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/359223870.jpg?k=69bff9875595d386e3c88db9f42f38ed59a6b94a27f75688be700f40ada929b2&o=&hp=1",
+            "https://royalblueinn.com/wp-content/uploads/2021/05/royalblueinn-fam-min.jpg",
+            "https://q-xx.bstatic.com/xdata/images/hotel/840x460/402231623.jpg?k=a6cf28405177e7ab06141adddb3defe64fe7769a956039ff6fbedf089d5b2a0d&o="
+        ],
+        "host": {
+            "name": "Megan",
+            "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
+            "note": "Hi my name is Megan. My husband Doug and I live on an old dairy farm just outside of town. We have 5 children. Four of them are in college.\nThe fifth is in 8th grade. We are excited about getting a chance to travel.  I work for a Caterpillar Company called Solar Turbines here in Vail.\nI love to meditate, fence, and snow shoe.  Boy, this is a whole lot of filler text, my fingers are getting tired.  Anyway, I hope your stay with us is a pleasant one.  We strive to provide top notch service as a budget prices.",
+            "reviewCount": 2,
+            "reviewValue": 4.98,
+            "joined": "2020-10-31T01:26:49+0000"
+        },
+        "_geoloc": {
+            "lat":  333.6836465492447,
+            "lng": 73.04060565063732
+          }
+    },
+    
+
+{ 
+    "objectID":"e",
+    "type": "Guest House",
+    "title": "New Shelton House",    
     "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
     "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
-    "reviewCount": 21,
-    "reviewValue": 4.93,
+    "reviewCount": 4,
+    "reviewValue": 3.13,
     "features":[
         "Coffee Maker",
         "Smoke Alarm",
         "Stove",
-        "Wifi",
         "Toiletries",
         "Self Check-In",
-        "Free Parking",
-        "Washer",
         "Dryer",
-        "Bear Traps",
         "TV",
         "Kitchen"        
     ],
-    "pricePerNight": 139,    
+    "pricePerNight": 6500,    
     "location": {        
-        "address": "79 Sandstone Rd",        
-        "city": "Vail",
-        "state": "Colorado",
-        "country": "USA"
+        "address": "House # 11 Kaghan Rd, near Centaurus Mall, F-8/3 F 8/3 F-8, Islamabad, Islamabad Capital Territory 44000, Pakistan",        
+        "city": "Islamabad",
+        "state": "Federal",
+        "country": "Pakistan"
     },    
-    "guests": 3,
-    "bedrooms": 4,
+    "guests": 2,
+    "bedrooms": 1,
     "beds": 3,
-    "bathrooms": 2,
-    "images": [
-        "https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_960_720.jpg",
-        "https://i.pinimg.com/originals/ed/8a/8f/ed8a8f510b0929d16f8959e3f5d10e68.png",
-        "https://images.woodenstreet.de/image/cache/data%2Fbed-with-storage%2Fadolph-bed-with-side-storage%2Frevised%2Frevised%2Fhoney%2Ffront-574x396.jpg",
-        "https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/romantic-bedroom-online-design-by-Decorilla-designer-Miaden-C.-1.jpg",
-        "https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/romantic-bedroom-interior-design.png"
-    ],
-    "host": {
-        "name": "Megan",
-        "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
-        "note": "Hi my name is Megan. My husband Doug and I live on an old dairy farm just outside of town. We have 5 children. Four of them are in college.\nThe fifth is in 8th grade. We are excited about getting a chance to travel.  I work for a Caterpillar Company called Solar Turbines here in Vail.\nI love to meditate, fence, and snow shoe.  Boy, this is a whole lot of filler text, my fingers are getting tired.  Anyway, I hope your stay with us is a pleasant one.  We strive to provide top notch service as a budget prices.",
-        "reviewCount": 2,
-        "reviewValue": 4.98,
-        "joined": "2020-10-31T01:26:49+0000"
-    },
-    "_geoloc": {
-        "lat": 39.605290,
-        "lng": -106.357319        
-      }
-},{ 
-    "objectID":"b",
-    "type": "CABIN",
-    "title": "Rustic Piney Lodge Nestled in the Foothills",    
-    "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
-    "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
-    "reviewCount": 56,
-    "reviewValue": 4.82,
-    "features":[
-        "Coffee Maker",
-        "Smoke Alarm",
-        "Stove",
-        "Toiletries",
-        "Self Check-In",
-        "Free Parking",
-        "Washer",
-        "Dryer",
-        "Kitchen"        
-    ],
-    "pricePerNight": 219,    
-    "location": {        
-        "address": "521 E Lionshead Circle",        
-        "city": "Vail",
-        "state": "Colorado",
-        "country": "USA"
-    },    
-    "guests": 4,
-    "bedrooms": 2,
-    "beds": 4,
     "bathrooms": 1,
     "images": [
-        "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756__340.jpg",
-        "https://i.pinimg.com/originals/ed/8a/8f/ed8a8f510b0929d16f8959e3f5d10e68.png",
-        "https://images.woodenstreet.de/image/cache/data%2Fbed-with-storage%2Fadolph-bed-with-side-storage%2Frevised%2Frevised%2Fhoney%2Ffront-574x396.jpg",
-        "https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/romantic-bedroom-online-design-by-Decorilla-designer-Miaden-C.-1.jpg",
-        "https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/romantic-bedroom-interior-design.png0"
+        "https://cdn.ostrovok.ru/t/640x400/content/5a/df/5adfd3f60c2813bf331272efb03abde8bd89ddf4.jpeg",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1e/a9/98/89/caption.jpg?w=700&h=-1&s=1",
+        "https://ak-d.tripcdn.com/images/200b1g000001hchj7EF43_Z_1100_824_R5_Q70_D.jpg",
+        "https://pix10.agoda.net/hotelImages/27914544/0/9dfe1cde7a16ffbc55b060da870aa285.jpg?ca=21&ce=0&s=1024x768",
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/376312642.jpg?k=1af563d7c2e8f168988b67156dffb87ff3954756adc28ce6ad9c9c6174077394&o=&hp=1"
     ],
-    "host": {
-        "name": "Megan",
-        "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
-        "note": "Hi my name is Megan. My husband Doug and I live on an old dairy farm just outside of town. We have 5 children. Four of them are in college.\nThe fifth is in 8th grade. We are excited about getting a chance to travel.  I work for a Caterpillar Company called Solar Turbines here in Vail.\nI love to meditate, fence, and snow shoe.  Boy, this is a whole lot of filler text, my fingers are getting tired.  Anyway, I hope your stay with us is a pleasant one.  We strive to provide top notch service as a budget prices.",
-        "reviewCount": 5,
-        "reviewValue": 4.67,
-        "joined": "2020-10-31T01:26:49+0000"
-    },
     "_geoloc": {
-        "lat": 39.605247,
-        "lng": -106.357022
+        "lat": 33.71337722707574, "lng": 73.047823204231
       }
 },
+
 { 
-    "objectID":"c",
-    "type": "CABIN",
-    "title": "Serene Cottage With Eagle Eye Views",    
+    "objectID":"f",
+    "type": "hotel",
+    "title": "Avari Hotel",    
     "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
     "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
-    "reviewCount": 186,
-    "reviewValue": 4.71,
+    "reviewCount": 86,
+    "reviewValue": 4.97,
     "features":[
+        "Coffee Maker",
         "Smoke Alarm",
-        "Stove",
-        "Wifi",
         "Toiletries",
         "Self Check-In",
-        "Free Parking",
-        "Washer",
         "Dryer",
         "TV",
         "Kitchen"        
     ],
-    "pricePerNight": 189,    
+    "pricePerNight": 2460,    
     "location": {        
-        "address": "12 Vail Rd",        
-        "city": "Vail",
-        "state": "Colorado",
-        "country": "USA"
+        "address": "Shahrah-e-Quaid-e-Azam, Garhi Shahu, Lahore, Punjab 54000, Pakistan",        
+        "city": "Lahore",
+        "state": "Punjab",
+        "country": "Pakistan"
+    },    
+    "guests": 6,
+    "bedrooms": 3,
+    "beds": 3,
+    "bathrooms": 3,
+    "images": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/277887727.jpg?k=218aa708109b7bff6274e168bbfe07726ae0b5922ed37280e2b5b1c1e86a892b&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1280x900/39638167.jpg?k=a0fe1829fae275b8debc8585c34dcfd7e26bd32546cdcf71f2938191cbe65370&o=&hp=1",
+        "https://www.kayak.com/rimg/himg/b7/2c/fb/expediav2-76631-d52a36-780772.jpg?width=720&height=576&crop=true",
+        "https://ik.imgkit.net/3vlqs5axxjf/external/ik-seo/http://media.iceportal.com/55949/photos/7542927_XL/Avari-Hotel-Suite.jpg?tr=w-780%2Ch-437%2Cfo-auto",
+        "https://pbs.twimg.com/media/EfYxSRgXoAA9DHL.jpg"
+    ],
+    "_geoloc": {
+        "lat":  31.561387801311973,
+        "lng":74.32708203406354
+      }
+},
+
+{ 
+    "objectID":"g",
+    "type": "Hotel",
+    "title": "Mairona Hotels Gulberg",    
+    "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
+    "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
+    "reviewCount": 86,
+    "reviewValue": 4.97,
+    "features":[
+        "Coffee Maker",
+        "Smoke Alarm",
+        "Toiletries",
+        "Self Check-In",
+        "Dryer",
+        "TV",
+        "Kitchen"        
+    ],
+    "pricePerNight": 305,    
+    "location": {        
+        "address": "6، S-A Mushtaq Ahmed Gurmani Rd, Block S Gulberg 2, Lahore",        
+        "city": "Lahore",
+        "state": "Punjab",
+        "country": "Pakistan"
+    },    
+    "guests": 6,
+    "bedrooms": 3,
+    "beds": 3,
+    "bathrooms": 3,
+    "images": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/224884346.jpg?k=b1cb0d5912fc187c8ae8fea8014ed65e03acd7b235497838f2cf8d8e4041b406&o=&hp=1",
+        "https://images.unsplash.com/photo-1585803114088-cd027272106a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        "https://cf.bstatic.com/xdata/images/hotel/max1280x900/245125697.jpg?k=a7afe54d5cc4d9f02351a45aae49062bc67e0ac15f3f948832bd1a9d4f655090&o=&hp=1",
+        "https://cf.bstatic.com/xdata/images/hotel/max1280x900/224884382.jpg?k=78220be4f1e32fc327b9103210c04d1c817da5b6580440a3ff9cdf523b198608&o=&hp=1",
+        "https://marvelousholidays.com/wp-content/uploads/2020/03/225002144-870x555.jpg"
+    ],
+    "_geoloc": {
+        "lat": 31.524300085348415, 
+        "lng": 74.35198943659086
+      }
+},
+
+{ 
+    "objectID":"h",
+    "type": "hotel",
+    "title": "Royaute Luxury",    
+    "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
+    "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
+    "reviewCount": 3,
+    "reviewValue": 4.27,
+    "features":[
+        "Coffee Maker",
+        "Smoke Alarm",
+        "Toiletries",
+        "Self Check-In",
+        "Dryer",
+        "TV",
+        "Kitchen"        
+    ],
+    "pricePerNight": 4050,    
+    "location": {        
+        "address": "C1، 43، Off MM Alam Rd, Block C 1 Gulberg III, Lahore",        
+        "city": "Lahore",
+        "state": "Punjab",
+        "country": "Pakistan"
+    },    
+    "guests": 3,
+    "bedrooms": 3,
+    "beds": 3,
+    "bathrooms": 3,
+    "images": [
+        "https://lbnhotels.com/upload/gallery/1236-1637930563-1470773652.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/12/fb/9b/49/executive-suites.jpg",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/323401745.jpg?k=511648d290db2793d4f783a6960d35945c061724a8990e09fadf8aedf0775f24&o=&hp=1",
+        "https://media-cdn.tripadvisor.com/media/photo-s/12/fb/9c/d9/executive-suites.jpg",
+        "https://vacationsetup.nyc3.digitaloceanspaces.com/production/vacationsetuppk/units/photos/c7/fpm/vbqs/yizcq.jpg"
+    ],
+    "_geoloc": {
+        "lat": 331.514633838844034 , "lng": 74.35046481160354
+      }
+},
+
+{ 
+    "objectID":"i",
+    "type": "Hotel",
+    "title": "Nine Tree Luxury Hotel & Suites",    
+    "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
+    "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
+    "reviewCount": 145,
+    "reviewValue": 4.47,
+    "features":[
+        "Coffee Maker",
+        "Smoke Alarm",
+        "Toiletries",
+        "Self Check-In",
+        "Dryer",
+        "TV",
+        "Kitchen"        
+    ],
+    "pricePerNight": 9800,    
+    "location": {        
+        "address": "32-C, Block C3 Gulberg III, Lahore, Punjab 54000",        
+        "city": "Lahore",
+        "state": "Punjab",
+        "country": "Pakistan"
     },    
     "guests": 2,
     "bedrooms": 1,
     "beds": 1,
     "bathrooms": 1,
     "images": [
-        "https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265__340.jpg",
-        "https://i.pinimg.com/originals/ed/8a/8f/ed8a8f510b0929d16f8959e3f5d10e68.png",
-        "https://images.woodenstreet.de/image/cache/data%2Fbed-with-storage%2Fadolph-bed-with-side-storage%2Frevised%2Frevised%2Fhoney%2Ffront-574x396.jpg",
-        "https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/romantic-bedroom-online-design-by-Decorilla-designer-Miaden-C.-1.jpg",
-        "https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/romantic-bedroom-interior-design.png0"
+        "https://images.unsplash.com/photo-1514774849407-0bef2676db20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+        "https://images.unsplash.com/photo-1501685532562-aa6846b14a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1542718610-a1d656d1884c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "https://images.unsplash.com/photo-1484301548518-d0e0a5db0fc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1585803114088-cd027272106a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
     ],
-    "host": {
-        "name": "Megan",
-        "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
-        "note": "Hi my name is Megan. My husband Doug and I live on an old dairy farm just outside of town. We have 5 children. Four of them are in college.\nThe fifth is in 8th grade. We are excited about getting a chance to travel.  I work for a Caterpillar Company called Solar Turbines here in Vail.\nI love to meditate, fence, and snow shoe.  Boy, this is a whole lot of filler text, my fingers are getting tired.  Anyway, I hope your stay with us is a pleasant one.  We strive to provide top notch service as a budget prices.",
-        "reviewCount": 7,
-        "reviewValue": 4.11,
-        "joined": "2020-10-31T01:26:49+0000"
-    },
     "_geoloc": {
-        "lat":  39.605354,
-        "lng":  -106.356443
+        "lat":  39.61538287099163, 
+        "lng": -106.52503850603765
       }
 },
+
 { 
-    "objectID":"d",
+    "objectID":"j",
     "type": "CABIN",
-    "title": "Cute Ski Chalet With Private Lift",    
+    "title": "Small Shed Out Back",    
     "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
     "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
-    "reviewCount": 213,
-    "reviewValue": 4.13,
+    "reviewCount": 50,
+    "reviewValue": 2.27,
     "features":[
         "Coffee Maker",
         "Smoke Alarm",
-        "Stove",
-        "Wifi",
         "Toiletries",
         "Self Check-In",
-        "Free Parking",
-        "Washer",
         "Dryer",
         "TV",
         "Kitchen"        
     ],
-    "pricePerNight": 175,    
+    "pricePerNight": 5500,    
     "location": {        
         "address": "302 Hanson Ranch Rd",        
-        "city": "Vail",
-        "state": "Colorado",
-        "country": "USA"
+        "city": "Lahore",
+        "state": "Punjab",
+        "country": "Pakistan"
     },    
-    "guests": 5,
-    "bedrooms": 2,
-    "beds": 4,
-    "bathrooms": 2,
+    "guests": 1,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 0,
     "images": [
-        "https://i.pinimg.com/originals/ed/8a/8f/ed8a8f510b0929d16f8959e3f5d10e68.png",
-        "https://images.woodenstreet.de/image/cache/data%2Fbed-with-storage%2Fadolph-bed-with-side-storage%2Frevised%2Frevised%2Fhoney%2Ffront-574x396.jpg",
-        "https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/romantic-bedroom-online-design-by-Decorilla-designer-Miaden-C.-1.jpg",
-        "https://www.decorilla.com/online-decorating/wp-content/uploads/2018/10/romantic-bedroom-interior-design.png0"
+        "https://images.unsplash.com/photo-1585803114088-cd027272106a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1501685532562-aa6846b14a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1542718610-a1d656d1884c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "https://images.unsplash.com/photo-1514774849407-0bef2676db20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+        "https://images.unsplash.com/photo-1484301548518-d0e0a5db0fc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
     ],
-    "host": {
-        "name": "Megan",
-        "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
-        "note": "Hi my name is Megan. My husband Doug and I live on an old dairy farm just outside of town. We have 5 children. Four of them are in college.\nThe fifth is in 8th grade. We are excited about getting a chance to travel.  I work for a Caterpillar Company called Solar Turbines here in Vail.\nI love to meditate, fence, and snow shoe.  Boy, this is a whole lot of filler text, my fingers are getting tired.  Anyway, I hope your stay with us is a pleasant one.  We strive to provide top notch service as a budget prices.",
-        "reviewCount": 2,
-        "reviewValue": 4.98,
-        "joined": "2020-10-31T01:26:49+0000"
-    },
     "_geoloc": {
-        "lat":  39.604434,
-        "lng": -106.356094
+        "lat":  39.6156952483699,
+        "lng": -106.52412139638828
       }
 }
+
+
 
 ]
