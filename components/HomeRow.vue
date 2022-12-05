@@ -18,13 +18,14 @@
         <span>({{ home.reviewCount }})</span>
       </div>
       <div class="app-price">
-        Rs {{ home.pricePerNight }}<span>/ night</span>
+        Rs {{ moneyFormat(home.pricePerNight) }}<span>/ night</span>
       </div>
     </div>
   </div>
   </div>
 </template>
 <script>
+import moneyFormat from '~/utils/generalFormat'
 import pluralize from '~/utils/pluralize'
 export default { 
   props:{
@@ -41,6 +42,7 @@ export default {
   },
   methods:{
     pluralize,
+    moneyFormat
   }
 }
 
