@@ -1,7 +1,8 @@
+import moneyFormat from '~/utils/generalFormat'
 export default function(context, inject){
     let isLoaded = false
     let waiting = []
-    
+    window.initGoogleMaps = initGoogleMaps
     addScript()
     inject('maps', {
         showMap,
@@ -11,11 +12,12 @@ export default function(context, inject){
         const script = document.createElement('script')
         script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDbhW47-rsI__rt0Q1lSXg4AMvkqkCDhtg&libraries=places&callback=initGoogleMaps"
         script.async = true
-        window.initGoogleMaps = initGoogleMaps
+
         document.head.appendChild(script)
     }
 
     function initGoogleMaps(){
+        console.log('maps initialize');
         isLoaded =  true
         waiting.forEach((item) => {
             if(typeof item.fn === 'function'){
@@ -74,7 +76,7 @@ export default function(context, inject){
             const marker = new window.google.maps.Marker({ 
                 position,
                 label: {
-                    text: `$${home.pricePerNight}`,
+                    text: `Rs ${moneyFormat(home.pricePerNight)}`,
                     className: `marker home-${home.id}`,
                 },
                 icon: 'https://maps.gstatic.com/mapfiles/transparent.png',
