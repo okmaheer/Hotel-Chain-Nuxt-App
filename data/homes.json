@@ -98,8 +98,8 @@
             "joined": "2020-10-31T01:26:49+0000"
         },
         "_geoloc": {
-            "lat": 33.73575431433353,
-            "lng": -73.08402211784396
+            "lat": 33.73321851119342,
+            "lng": 73.0839286627465
           }
     },
     { 
@@ -156,7 +156,7 @@
     { 
         "objectID":"d",
         "type": "Hotel",
-        "title": "CRoyal Blue Inn Hotel",    
+        "title": "Royal Blue Inn Hotel",    
         "description":"Need to get away?  Then this is the cabin for you!  Nestled in a large forest right inside Vail, this spacious rustic abode offers amazing views of wildlife and nature through over 20 windows.\nIt's a great place for hiking, mountain biking, and bird watching.  In the winter, warm up in front of the wood burning fireplace with some hot chocolate from the nearby market.\nIt's the perfect spot to relax.  You can shop the local markets, take a dip in the hot tub or even wrestle a bear out back.  Whatever your pleasure, you're sure to find peace and quiet in the mountains of Vail",
         "note": "In winter it gets below -40 Fahrenheit, bring a parka.  Chains on tires are highly recommended.",
         "reviewCount": 213,
@@ -200,8 +200,8 @@
             "joined": "2020-10-31T01:26:49+0000"
         },
         "_geoloc": {
-            "lat":  333.6836465492447,
-            "lng": 73.04060565063732
+            "lat": 33.68377642516504, 
+            "lng": 73.04091041275225
           }
     },
     
