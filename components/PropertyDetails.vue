@@ -22,7 +22,7 @@
             </div>
             <div>
                 <div class="app-price">
-                    Rs {{ home.pricePerNight }}<span> / night</span>
+                    Rs {{ moneyFormat(home.pricePerNight) }}<span> / night</span>
                 </div>
                 <div class="app-search">
                     <input type="text" class="datepicker" placeholder="Check in" />
@@ -36,7 +36,7 @@
 </template>
 <script>
 import pluralize from '~/utils/pluralize'
-
+import moneyFormat from '~/utils/generalFormat'
 export default {
     props: {
         home: {
@@ -46,6 +46,7 @@ export default {
     },
     methods: {
         pluralize,
+        moneyFormat
     },
     data() {
         return {
