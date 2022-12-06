@@ -1,6 +1,11 @@
+import Cookie from "js-cookie";
 export default {
-    myGetter(state) {
-        return state.counter + 1000
+      isLoggedIn(state) {
+      if(state.isLoggedIn || Cookie.get('idToken')){
+        return true;
+      }
+        return false;
     }
+    
 
 }
