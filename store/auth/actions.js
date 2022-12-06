@@ -1,5 +1,5 @@
 export default {
-    counterUp({ state, commit }) {
-        commit('setCounter', state.counter + 1)
+    IsLoggedIn({ state, commit },value) {
+        commit('setIsLoggedIn',value)
     }
 }
