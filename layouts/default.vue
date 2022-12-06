@@ -1,22 +1,25 @@
 <template>
     <div class="app">
         <header class="app-header">
-         <div class="app-logo">
-            <img src="/images/logo.svg" alt="">
-         </div>
-         <div class="app-search">
-            <input type="text" ref="citySearch" @changed="changed" placeholder="Enter your address" />
-            <input type="text" class="datepicker" placeholder="Check in" />
-            <input type="text" class="datepicker" placeholder="Check out" />
-            <button>
-                <img src="/images/icons/search.svg" />
-            </button>
-         </div>
-         <div class="app-user-menu">
-         <img src="/images/icons/search.svg" />
-         <div class="name">Host</div>
-         <img src="/images/user.jpg"  class="avatar" />
-         </div>
+            <div class="app-logo">
+                <img src="/images/logo.svg" alt="">
+            </div>
+            <div class="app-search">
+                <input type="text" ref="citySearch" @changed="changed" placeholder="Enter your address" />
+                <input type="text" class="datepicker" placeholder="Check in" />
+                <input type="text" class="datepicker" placeholder="Check out" />
+                <button>
+                    <img src="/images/icons/search.svg" />
+                </button>
+            </div>
+            <div class="app-user-menu">
+                <template v-if="isLoggedIn">
+                    <img src="/images/icons/house/svg" />
+                    <div class="name">Host</div>
+                    <img :src="user.profileUrl" alt="" class="avatar" />
+                </template>
+                <div id="googleButton" class="ml-8" v-show="!isLoggedin"></div>
+            </div>
         </header>
         <nuxt />
     </div>
@@ -24,11 +27,21 @@
 <script>
 export default {
     mounted() {
-       
+        // console.log(google.accounts.id);
         this.$maps.makeAutoComplete(this.$refs.citySearch)
+    },
+    computed: {
+        user() {
+   return this.$store.state.auth.isLoggedIn
+        },
+        isLoggedin() {
+            return this.$store.state.auth.isLoggedin;
+            
+        }
     },
     methods: {
         changed(event) {
+            // console.log(google.accounts.id);
             const place = event.detail
             if (!place.geometry) return
 
