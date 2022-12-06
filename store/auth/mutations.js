@@ -1,5 +1,5 @@
 export default {
-    setCounter(state, value) {
-        state.counter = value
+    setIsLoggedIn(state, value) {
+        state.isLoggedin = value
     }
 }
