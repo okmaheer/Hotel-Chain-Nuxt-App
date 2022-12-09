@@ -14,11 +14,11 @@
             </div>
             <div class="app-user-menu">
                 <template v-if="isLoggedIn">
-                    <img src="/images/icons/house/svg" />
+                    <img src="/images/icons/house.svg" />
                     <div class="name">{{ user.name }}</div>
                     <img :src="user.picture" alt="" class="avatar" />
                 </template>
-                <div id="googleButton" class="ml-8" v-show="!isLoggedIn"></div>
+                <div id="googleButton" class="ml-8" v-if="!isLoggedIn"></div>
             </div>
         </header>
         <nuxt />
@@ -32,11 +32,12 @@ export default {
     },
     computed: {
         user() {
-   return this.$store.state.auth.isLoggedIn
+            console.log(this.$store.state.auth.user)
+            return this.$store.state.auth.user
         },
         isLoggedIn() {
 
-            return this.$store.state.auth.isLoggedIn;
+            return this.$store.getters["auth/isLoggedIn"]
 
         }
     },
