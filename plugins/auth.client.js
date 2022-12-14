@@ -62,7 +62,10 @@ export default (context, inject) => {
     }
 
     function signout() {
-        google.accounts.id.disableAutoSelect();
+        Cookie.remove(context.$config.auth.cookieName);
+        document.getElementById("googleButton").hidden = false;
+        context.store.commit('auth/setIsLoggedIn', false);
+        context.store.dispatch('auth/setUser', { });
     }
 
 }
