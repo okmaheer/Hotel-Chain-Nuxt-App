@@ -15,10 +15,11 @@
             <div class="app-user-menu">
                 <template v-if="isLoggedIn">
                     <img src="/images/icons/house.svg" />
+                   
                     <div class="name">{{ user.name }}</div>
                     <img :src="user.profileUrl" alt="" class="avatar" />
                 </template>
-                <div id="googleButton" class="ml-8"></div>
+                <div id="googleButton" v-show="!isLoggedIn" class="ml-8"></div>
             </div>
         </header>
         <nuxt />
@@ -37,7 +38,7 @@ export default {
             return this.$store.getters["auth/User"]
         },
         isLoggedIn() {
-
+            console.log(this.$store.getters["auth/isLoggedIn"])
             return this.$store.getters["auth/isLoggedIn"]
 
         }
