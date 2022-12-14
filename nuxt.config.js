@@ -29,7 +29,7 @@ export default {
     '~/plugins/auth.client',
 
   ],
-  modules: ['~/modules/test'],
+  modules: ['~/modules/auth','~/modules/algolia'],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -48,13 +48,21 @@ export default {
     }
   },
   publicRuntimeConfig: {
-    auth:{
+    auth: {
       cookieName: 'idToken',
       clientId: '998555443613-ck6bj87lr6291k2062ke5u6undjk0cb2.apps.googleusercontent.com'
     },
+    algolia :{
+      appId: 'SXPH6JHYHV',
+      key: 'cbd3904d9cb76c940167b5a1e1ba9573'
+    }
   },
   privateRuntimeConfig: {
+    algolia: {
+      appId: 'SXPH6JHYHV',
+      key: 'cbd3904d9cb76c940167b5a1e1ba9573'
+    }
+  },
 
-  }
 
 }
