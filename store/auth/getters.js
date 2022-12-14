@@ -5,6 +5,9 @@ export default {
         return true;
       }
         return false;
+    },
+    User(state){
+      return state.user
     }
     
 
