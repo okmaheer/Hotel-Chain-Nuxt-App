@@ -19,7 +19,7 @@ export default function () {
     if (!idToken) return rejectHit(res)
     const ticket = await getUser(idToken)
     if (!ticket) return rejectHit(res)
-    console.log(ticket)
+    console.log(ticket,'ticket')
     req.identity = {
       id: ticket.sub,
       email: ticket.email,
@@ -38,7 +38,7 @@ export default function () {
       return ticket.getPayload()
     }
     catch (error) {
-      console.log(error);
+      console.log(error,'error');
     }
   }
   function rejectHit(res) {

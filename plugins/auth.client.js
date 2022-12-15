@@ -44,9 +44,6 @@ export default (context, inject) => {
         try {
             const response = await unWrap(await fetch('/api/user'))
             const user = response.json
-            // const user = response.json
-            // console.log('user', user)
-
             context.store.commit('auth/setIsLoggedIn', true);
             context.store.dispatch('auth/setUser', {
                 name: user.name,
@@ -54,7 +51,7 @@ export default (context, inject) => {
             });
         }
         catch(error){
-        console.log(error)
+        console.log(error,'error')
         }
         
 

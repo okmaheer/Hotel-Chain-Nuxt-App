@@ -28,24 +28,19 @@
 <script>
 export default {
     mounted() {
-        // console.log(google.accounts.id);
         this.$maps.makeAutoComplete(this.$refs.citySearch)
     },
     computed: {
         user() {
-            console.log(this.$store.state.auth.user)
-            console.log(this.$store.getters["auth/User"])
             return this.$store.getters["auth/User"]
         },
         isLoggedIn() {
-            console.log(this.$store.getters["auth/isLoggedIn"])
             return this.$store.getters["auth/isLoggedIn"]
 
         }
     },
     methods: {
         changed(event) {
-            // console.log(google.accounts.id);
             const place = event.detail
             if (!place.geometry) return
 
