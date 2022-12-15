@@ -1,6 +1,7 @@
 export default {
     setIsLoggedIn(state, value) {
-        state.isLoggedin = value
+      console.log(value)
+        state.isLoggedIn = value
     },
     setUser(state, value){
       state.user = value
