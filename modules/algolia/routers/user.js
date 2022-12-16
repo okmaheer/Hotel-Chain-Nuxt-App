@@ -1,4 +1,4 @@
-import { sendJSON } from '../helper'
+import { sendJSON } from '../helpers'
 
 export default (apis) => {
     
