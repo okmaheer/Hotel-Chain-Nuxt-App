@@ -29,7 +29,7 @@ export default {
     '~/plugins/auth.client',
 
   ],
-  modules: ['~/modules/auth','~/modules/algolia','~/modules/cloudinary'],
+  modules: ['~/modules/auth','~/modules/algolia', '~/modules/cloudinary'],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
