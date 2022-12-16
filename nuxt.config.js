@@ -29,7 +29,7 @@ export default {
     '~/plugins/auth.client',
 
   ],
-  modules: ['~/modules/auth','~/modules/algolia'],
+  modules: ['~/modules/auth','~/modules/algolia','~/modules/cloudinary'],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -37,7 +37,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-  ],
+  ], 
   css: [
     '~/assets/sass/app.scss'
   ],
@@ -61,6 +61,9 @@ export default {
     algolia: {
       appId: 'SXPH6JHYHV',
       key: 'cbd3904d9cb76c940167b5a1e1ba9573'
+    },
+    cloudinary:{
+      apiSecret: 'mj3JG7Q1OWWBE3PWj-YgAgaapp4'
     }
   },
 
