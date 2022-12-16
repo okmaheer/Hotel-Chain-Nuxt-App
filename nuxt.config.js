@@ -29,8 +29,11 @@ export default {
     '~/plugins/auth.client',
 
   ],
-  modules: ['~/modules/auth','~/modules/algolia', '~/modules/cloudinary'],
+  modules: ['~/modules/auth','~/modules/algolia', '~/modules/cloudinary','@nuxtjs/cloudinary'],
   // Auto import components: https://go.nuxtjs.dev/config-components
+  cloudinary: {
+    cloudName:'drbeaazpb',
+  },
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
@@ -55,6 +58,9 @@ export default {
     algolia :{
       appId: 'SXPH6JHYHV',
       key: 'cbd3904d9cb76c940167b5a1e1ba9573'
+    },
+    cloudinary:{
+      apiKey: '989857411945348'
     }
   },
   privateRuntimeConfig: {
