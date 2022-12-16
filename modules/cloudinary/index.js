@@ -13,7 +13,7 @@ export default function (){
         Object.keys(req.body).forEach(key =>{
          payload.push(`${key}=${req.body[key]}`)
         })
-         console.l og(payload)
+         console.log(payload)
          sha1.update(payload.sort().join('&') = config.apiSecret)
          res.end(JSON.stringify({
         signature: sha1.digest('hex')
