@@ -1,4 +1,4 @@
-import { getHeaders } from '../helper'
+import { getHeaders } from '../helpers'
 import fetch from 'node-fetch'
 import { unWrap, getErrorResponse } from '../../../utils/fetchUtils'
 
