@@ -1,8 +1,11 @@
 <template>
-    <div>[LIST OF HOMES HERE]
+    <div>
+        <span v-for="home in homeList" :key="home.objectID">{{ home.title }}:
+            <button class="text-red-800">Delete</button><br />
+        </span>
         <h2 class="text-xl bold">Add a Home</h2>
         <form class="form" @submit.prevent="onSubmit">
-           
+
             Images:<br />
             <ImageUploader @file-uploaded="imageUpdated($event, 0)" />
             <ImageUploader @file-uploaded="imageUpdated($event, 1)" />
@@ -40,9 +43,12 @@
     </div>
 </template>
 <script>
+import { unWrap } from '~/utils/fetchUtils'
 export default {
+
     data() {
         return {
+            homeList: [],
             home: {
                 title: '',
                 description: '',
@@ -69,7 +75,10 @@ export default {
         }
     },
     methods: {
-        imageUpdated(imageUrl,index){
+        async setHomesList() {
+            this.homeList = (await unWrap(await fetch('/api/homes/user/'))).json
+        },
+        imageUpdated(imageUrl, index) {
             this.home.images[index] = imageUrl
         },
         changed(event) {
@@ -101,6 +110,7 @@ export default {
         }
     },
     mounted() {
+        this.setHomesList()
         this.$maps.makeAutoComplete(this.$refs.locationSelector, ['address'])
     },
 }
