@@ -40,7 +40,13 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxt/image'
   ], 
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/drbeaazpb/image/upload/'
+    }
+},
   css: [
     '~/assets/sass/app.scss'
   ],
