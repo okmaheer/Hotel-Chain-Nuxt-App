@@ -27,7 +27,7 @@ export default {
     '~/plugins/maps.client',
     '~/plugins/dataApi',
     '~/plugins/auth.client',
-
+    '~/plugins/vCalendar.client'
   ],
   modules: ['~/modules/auth','~/modules/algolia', '~/modules/cloudinary','@nuxtjs/cloudinary'],
   // Auto import components: https://go.nuxtjs.dev/config-components
