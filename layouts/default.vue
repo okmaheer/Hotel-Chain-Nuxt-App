@@ -2,7 +2,7 @@
     <div class="app">
         <header class="app-header">
             <div class="app-logo">
-                <img src="/images/logo.svg" alt="">
+                <img src="/images/logo.png" alt="" height="100" width="150">
             </div>
             <div class="app-search">
                 <input type="text" ref="citySearch" @changed="changed" placeholder="Enter your address" />
