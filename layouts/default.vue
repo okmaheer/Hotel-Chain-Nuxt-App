@@ -1,9 +1,11 @@
 <template>
     <div class="app">
         <header class="app-header">
+            <nuxt-link class="app-logo" to="/">
             <div class="app-logo">
                 <img src="/images/logo.png" alt="" height="100" width="150">
             </div>
+            </nuxt-link>
             <div class="app-search">
                 <input type="text" ref="citySearch" @changed="changed" placeholder="Enter your address" />
                 <client-only>

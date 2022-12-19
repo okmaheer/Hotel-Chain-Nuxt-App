@@ -1,5 +1,5 @@
-import { unWrap, getErrorResponse} from '~/utils/fetchUtils'
-export default function ({$config}, inject) {
+import { unWrap, getErrorResponse } from '~/utils/fetchUtils'
+export default function ({ $config }, inject) {
 
   const headers = {
     'X-Algolia-API-key': $config.algolia.key,
@@ -8,7 +8,7 @@ export default function ({$config}, inject) {
   inject('dataApi', {
     getHome,
     getReviewsByHomeId,
-    getUserByHomeId, 
+    getUserByHomeId,
     getHomesByLocation,
     getHomes
   })
@@ -49,16 +49,20 @@ export default function ({$config}, inject) {
       return getErrorResponse(error)
     }
   }
-  async function getHomesByLocation (Lat,Lng, radiusInMeters = 1500 * 20) {
-
+  async function getHomesByLocation(lat, lng, start, end, radiusInMeters = 1500 * 15) {
     try {
+      const days = []
+      for (var day = start; day <= end; day += 86400) {
+        days.push(`availability:${day}`)
+      }
       return unWrap(await fetch(`https://${$config.algolia.appId}-dsn.algolia.net/1/indexes/homes/query`, {
         headers,
         method: 'POST',
         body: JSON.stringify({
-          aroundLatLng:`${Lat},${Lng}`,
-          aroundRadius:radiusInMeters,
-           hitsPerPage: 10,
+          aroundLatLng: `${lat},${lng}`,
+          aroundRadius: radiusInMeters,
+          hitsPerPage: 10,
+          filters: days.join(' AND '),
           attributesToHighlight: [],
         })
       }))
@@ -66,19 +70,19 @@ export default function ({$config}, inject) {
       return getErrorResponse(error)
     }
   }
-  async function getHomes(){
+  async function getHomes() {
     try {
-        return unWrap(await fetch(`https://${$config.algolia.appId}-dsn.algolia.net/1/indexes/homes/query`, {
-            headers,
-            method: 'POST',
-            body: JSON.stringify({                    
-                hitsPerPage: 3,
-                attributesToHighlight: [],
-            })
-        }))
-    } catch(error){
-        return getErrorResponse(error)
+      return unWrap(await fetch(`https://${$config.algolia.appId}-dsn.algolia.net/1/indexes/homes/query`, {
+        headers,
+        method: 'POST',
+        body: JSON.stringify({
+          hitsPerPage: 3,
+          attributesToHighlight: [],
+        })
+      }))
+    } catch (error) {
+      return getErrorResponse(error)
     }
-}
+  }
 
 } 
