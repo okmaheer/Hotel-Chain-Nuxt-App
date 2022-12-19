@@ -15,7 +15,7 @@ module.exports = {
         mineshaft: '#212121',
         'catskill-white': '#F6F8FB',
         'east-bay': '#3E5786',
-        'dodger-blue': '#367cff',
+        'dodger-blue': '#EBD133',
         'polo-blue': '#88a2d2',
         'link-water': '#CED5F1',
       },
