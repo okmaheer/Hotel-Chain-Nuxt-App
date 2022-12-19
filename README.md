@@ -1,4 +1,4 @@
-# NuxtBnb
+# Hotel Chain
 
 ## Build Setup
 

@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import homes from "~/data/homes";
 export default {
   head(){
   return{
